@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergency Service</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&family=Hind+Siliguri:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Govt Logo" class="logo" />
+      <span class="brand-stack">
+        <b>Emergency</b>
+        <b>Service</b>
+      </span>
+    </div>
+
+    <div class="stats">
+      <div class="pill pill-soft" title="Likes">
+        <span id="heartCount">0</span>
+        <img src="images/heart.png" class="pill-icon" alt="heart" />
+      </div>
+      <div class="pill pill-soft" title="Coins">
+        <span id="coinCount">100</span>
+        <img src="images/coin.png" class="pill-icon" alt="coin" />
+      </div>
+      <button class="pill pill-cta" id="copyPill" type="button" disabled>
+        <span id="copyCount">0</span> Copy
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-center">
+      <img src="images/logo-dark.png" class="hero-emblem" alt="Govt Emblem" />
+      <h1>জরুরি সেবা ডিরেক্টরি</h1>
+      <p class="subtitle">
+        Government Emergency Services at Your Fingertip — A Project by Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="cards">
+      <div id="cardGrid" class="grid"></div>
+    </section>
+
+    <aside class="history">
+      <div class="history-head">
+        <h3><i class="fa-regular fa-clock"></i> Call History</h3>
+        <button id="clearHistory" class="btn btn-clear">Clear</button>
+      </div>
+      <ul id="historyList" class="history-list"></ul>
+    </aside>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
